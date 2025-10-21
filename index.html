@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent团队 - 上海乙岁科技</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 150px 2rem 100px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #667eea;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .about-content {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 2;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Tech Stack */
+        .tech-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            margin: 1rem 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">AI Agent 团队</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>构建智能未来</h1>
+        <p>基于 AgentScope 框架，打造下一代智能代理应用</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section class="section">
+            <h2>关于我们</h2>
+            <div class="about-content">
+                <p>
+                    我们是一支专注于 AI Agent 技术的创新团队，致力于利用先进的人工智能技术为企业提供智能化解决方案。
+                </p>
+                <p>
+                    我们采用阿里巴巴开源的 <strong>AgentScope</strong> 框架，这是一个面向开发者、适合生产环境的 AI Agent 开发平台，
+                    支持异步并行执行、安全沙箱运行和快速部署。
+                </p>
+                <div>
+                    <span class="tech-badge">AgentScope Framework</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section">
+            <h2>核心优势</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🚀 生产级框架</h3>
+                    <p>基于 AgentScope 1.0，具备完善的监控、日志和部署特性，确保应用稳定可靠运行于生产环境。</p>
+                </div>
+                <div class="card">
+                    <h3>⚡ 高性能执行</h3>
+                    <p>支持异步和并行工具执行，智能代理可以同时发送多个请求，大幅提升响应速度和处理效率。</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 安全可靠</h3>
+                    <p>内置运行时沙箱环境，确保代理执行的安全性，为企业级应用提供可靠的安全保障。</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 开发者友好</h3>
+                    <p>提供可视化工具 AgentScope Studio，简化开发流程，让 AI Agent 应用开发更加高效便捷。</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 开源生态</h3>
+                    <p>Apache 2.0 开源许可，活跃的社区支持，持续更新的功能模块，包括 RAG、语音代理等。</p>
+                </div>
+                <div class="card">
+                    <h3>💡 创新应用</h3>
+                    <p>从企业智能助手到复杂的多代理协作系统，我们帮助您实现各种创新的 AI 应用场景。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 上海乙岁科技有限公司 版权所有</p>
+    </footer>
+</body>
+</html>
